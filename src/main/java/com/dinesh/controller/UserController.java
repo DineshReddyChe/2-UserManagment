@@ -49,7 +49,7 @@ public class UserController {
 	@ResponseBody
 	public Map<Integer, String> getCitys(@PathVariable Integer stateId){
 		Map<Integer,String> citysMap=userService.getCities(stateId);
-		System.out.println(citysMap);
+		
 		return citysMap;
 		
 	}
